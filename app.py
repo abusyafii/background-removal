@@ -1,9 +1,9 @@
 from PIL import Image
 from rembg import remove
 
-#Open image
-img = Image.open(input("Filename: "))
-#Removing background
-imgwbg = remove(img)
-#Saving image
-imgwbg.save("modified.png")
+def removebg ():
+    image = Image.open(input("Image Name: "))
+    imagewbg = remove(image)
+    imagewbg.save("modefied.png")
+
+removebg ()
